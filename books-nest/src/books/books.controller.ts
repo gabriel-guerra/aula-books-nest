@@ -17,7 +17,7 @@ export class BooksController {
     return this.booksService.findAll();
   }
 
-  @Get(':id')
+  @Get(':id') /*https://narutoogle.com/books/123*/
   findOne(@Param('id') id: string) {
     return this.booksService.findById(id);
   }
